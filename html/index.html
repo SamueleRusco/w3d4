@@ -22,15 +22,18 @@
     <div class="esterno">
       <div class="bottone">
         <p>Add something to the list ➪ &nbsp</p>
-        <input type="text" />
-        <button>aggiungi</button>
+        <input
+          type="text"
+          id="inputText"
+          placeholder="Inserisci un nuovo elemento nella lista"
+          onkeyup="inserisciTesto(event)"
+        />
       </div>
       <div class="interno">
         <button>rimuovi</button>
-        <ul class="lista">
-          <li></li>
-        </ul>
+        <div id="lista"></div>
       </div>
     </div>
   </body>
+  <script src="../js/script.js"></script>
 </html>
