@@ -39,4 +39,8 @@ const inserisciTestoBottone = (event) => {
   }
 };
 
-const rimuoviTestoBottone = () => {};
+const rimuoviTestoBottone = () => {
+  const lista = document.getElementById("lista"); //seleziono locazione (padre)
+  const elementiSelezionati = document.querySelectorAll(".selected"); //seleziono gli item "clickati" dentro al padre
+  elementiSelezionati.forEach((element) => lista.removeChild(element)); //per ogni elemento ".selected" nella lista "list-item" ordino la rimozione
+};

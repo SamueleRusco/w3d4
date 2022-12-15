@@ -28,9 +28,14 @@
           placeholder="Inserisci un nuovo elemento nella lista"
           onkeyup="inserisciTesto(event)"
         />
+        <button id="buttonInserisci" onclick="inserisciTestoBottone(event)">
+          aggiungi
+        </button>
       </div>
       <div class="interno">
-        <button>rimuovi</button>
+        <button id="remove" onclick="rimuoviTestoBottone(event)">
+          rimuovi
+        </button>
         <div id="lista"></div>
       </div>
     </div>
